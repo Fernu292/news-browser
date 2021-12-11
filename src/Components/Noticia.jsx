@@ -9,7 +9,7 @@ const Noticia = ({noticia}) => {
 
     const imagen = (urlToImage) ? 
         <div className = 'card-image'>
-            <img src={urlToImage} alt={title} />
+            <img src={urlToImage} alt={title} loading='lazy'/>
             <span className = 'card-title'>{source.name}</span>
         </div>  
     : null;
